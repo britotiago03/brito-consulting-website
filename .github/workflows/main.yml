@@ -49,12 +49,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Lint
+      - name: Run Lint
         run: npm run lint
         env:
           CI: true
 
-  test_unit:
+  unit_tests:
     runs-on: ubuntu-latest
     needs: build
     strategy:
@@ -72,12 +72,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Unit Tests
+      - name: Run Unit Tests
         run: npm run test:unit
         env:
           CI: true
 
-  test_integration:
+  integration_tests:
     runs-on: ubuntu-latest
     needs: build
     strategy:
@@ -92,4 +92,33 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install depen
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Integration Tests
+        run: npm run test:integration
+        env:
+          CI: true
+
+  e2e_tests:
+    runs-on: ubuntu-latest
+    needs: build
+    strategy:
+      matrix:
+        node-version: [14, 16]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run E2E Tests
+        run: npm run test:e2e
+        env:
+          CI: true
