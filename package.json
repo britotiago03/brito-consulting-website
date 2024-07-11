@@ -4,6 +4,7 @@
   "description": "Official website for Brito Consulting Inc. offering software, website, and mobile app development services.",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint .",
     "test:unit": "jest --config jest.unit.config.js",
@@ -19,6 +20,6 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^5.0.1"
   }
 }
