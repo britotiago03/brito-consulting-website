@@ -28,8 +28,27 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run lint
-        run: npm run lint
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
 
-      - name: Run tests
-        run: npm test
+      - name: Lint
+        run: npm run lint
+        env:
+          CI: true
+
+      - name: Unit Tests
+        run: npm run test:unit
+        env:
+          CI: true
+
+      - name: Integration Tests
+        run: npm run test:integration
+        env:
+          CI: true
+
+      - name: End-to-End Tests
+        run: npm run test:e2e
+        env:
+          CI: true
