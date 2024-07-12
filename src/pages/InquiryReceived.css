@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@400;600&display=swap');
+
+.inquiry-received {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.inquiry-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.inquiry-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #404040;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.inquiry-image {
+    width: 800px;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.back-home-button {
+    width: 200px;
+    height: 50px;
+    background-color: #004080;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    text-decoration: none;
+}
+
+.back-home-button:hover {
+    background-color: #003366; /* darker shade of blue for hover effect */
+}
