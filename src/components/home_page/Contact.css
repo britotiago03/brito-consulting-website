@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@400;700&display=swap');
+
+.contact-section {
+    padding: 40px 0;
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+.contact-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    grid-column: 2; /* Place the form in the second column */
+}
+
+.contact-input {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #004080;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.contact-textarea {
+    width: 400px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #004080;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    resize: none; /* Disable resizing */
+}
+
+.contact-button {
+    width: 200px;
+    height: 50px;
+    background-color: #004080;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #003366; /* darker shade of blue for hover effect */
+}
+
+.contact-info {
+    text-align: left;
+    grid-column: 3; /* Place the contact info in the third column */
+}
+
+.contact-image {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.contact-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.contact-title-info, .contact-email, .contact-phone {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
