@@ -6,7 +6,7 @@ import './Header.css'; // Import the CSS file
 const Header = () => {
     return (
         <header className="header">
-            <Link to="/" className="header-logo">
+            <Link to="/" className="header-logo" onClick={() => window.scrollTo(0, 0)}>
                 <img src={logo} alt="Brito Consulting Logo" />
                 <h1>Brito Consulting</h1>
             </Link>
