@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .header {
     background-color: #004080; /* blue-900 */
     color: #FFFFFF;
