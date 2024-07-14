@@ -6,6 +6,8 @@ import Process from '../components/home_page/Process';
 import Testimonials from '../components/home_page/Testimonials';
 import Contact from '../components/home_page/Contact';
 
+// You see
+
 const Home = () => {
     return (
         <main>
