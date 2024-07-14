@@ -44,4 +44,5 @@
 
 .service-card-button:hover {
     background-color: #003366; /* darker shade of blue for hover effect */
+    cursor : pointer;
 }
